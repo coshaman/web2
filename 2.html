@@ -1,0 +1,51 @@
+<!doctype.html>
+<html>
+<head>
+    <title>책소동</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <h1><a href="index.html">책소동 by 대소동</a></h1>
+    <input id = "night_day2" type="button" value="night" onclick="
+    if(document.querySelector('#night_day2').value ==='night'){
+      document.querySelector('body').style.backgroundColor ='#AA9999';
+      document.querySelector('body').style.color ='white';
+      document.querySelector('#night_day2').value ='day';
+
+      var links = document.querySelectorAll('a');
+      var i = 0;
+      while(i < links.length){
+        links[i].style.color = 'powderblue';
+        i = i + 1;
+      }
+    } else {
+      document.querySelector('body').style.backgroundColor ='white';
+      document.querySelector('body').style.color ='black';
+      document.querySelector('#night_day2').value ='night';
+
+      var links = document.querySelectorAll('a');
+      var i = 0;
+      while(i < links.length){
+        links[i].style.color = 'blue';
+        i = i + 1;
+      }
+    }
+    ">
+    <ol>
+      <li><a href="1.html">책 읽기</a></li>
+      <li><a href="2.html">추천 도서</a></li>
+      <li><a href="3.html">독후감</a></li>
+    </ol>
+    <h2>추천도서</h2>
+    <p>
+    이번주 추천 도서 :
+    <strong>죽고 싶지만 떡볶이는 먹고 싶어</strong>
+    : 정신적인 빈곤 국가 대한민국에서 당신의 삶을 되돌아볼 기회!
+      </p>
+      <p>
+      이번달 신작 :
+      <strong>죽음</strong>
+      : 베르나르 베르베르의 신작! 죽음에 관한 미스터리가 풀린다!
+      </p>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!doctype.html>
+<html>
+<head>
+    <title>책소동</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <h1><a href="index.html">책소동</a></h1>
+    <input id = "night_day" type="button" value="night" onclick="
+      if(document.querySelector('#night_day').value ==='night'){
+        document.querySelector('body').style.backgroundColor ='black';
+        document.querySelector('body').style.color ='white';
+        document.querySelector('#night_day').value ='day';
+
+        var links = document.querySelectorAll('a');
+        var i = 0;
+        while(i < links.length){
+          links[i].style.color = 'powderblue';
+          i = i + 1;
+        }
+      } else {
+        document.querySelector('body').style.backgroundColor ='white';
+        document.querySelector('body').style.color ='black';
+        document.querySelector('#night_day').value ='night';
+
+        var links = document.querySelectorAll('a');
+        var i = 0;
+        while(i < links.length){
+          links[i].style.color = 'blue';
+          i = i + 1;
+        }
+      }
+    ">
+    <ol>
+      <li><a href="1.html">책 읽기</a></li>
+      <li><a href="2.html">추천 도서</a></li>
+      <li><a href="3.html">독후감</a></li>
+    </ol>
+    <h2>책 읽기</h2>
+    <p>
+    읽던 도서 :
+    <strong>박사가 사랑한 수식</strong>
+    :84쪽까지 읽으셨습니다.
+    <strong>데미안</strong>
+    :108쪽까지 읽으셨습니다.
+    <strong>한번 읽고 평생 써먹는 수학 상식 이야기</strong>
+    :10쪽까지 읽으셨습니다.
+      </p>
+</body>
+</html>
